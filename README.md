@@ -51,7 +51,7 @@ from sklearn.preprocessing import StandardScaler
 
 ## Usage
 
-## We start by finding the optimal number of clusters(k) for our data using the KMeans method from scikit learn and analyzing our 'elbow plot'  
+### We start by finding the optimal number of clusters(k) for our data using the KMeans method from scikit learn and analyzing our 'elbow plot'  
 
 ```python  
 for i in k:
@@ -64,8 +64,14 @@ for i in k:
 ```python  
 df_elbow.hvplot.line(x='k', y='inertia', xticks=k, title='Elbow Curve')  
 ```  
-*Notice the plot above shows the 'elbow' indicates the optimal value for k or the number of clusters is 4  
+![Elbow plot](./Resources/elbow_plot.png)  
 
+*Notice the plot above shows the 'elbow' indicates the optimal value for k or the number of clusters is 4  
+  
+
+### Once we have determined the optimal number of clusters for our dataset, we can plot a scatter plot of the new dataframe generated after using our model to group our scaled dataframe into their predicted clusters  --  
+
+![Scatter Plot](./Resources/clusters_scatter.png)
 
   
 pypl_dataframe = pd.read_sql(query, con=engine, parse_dates=['time'], index_col='time')
