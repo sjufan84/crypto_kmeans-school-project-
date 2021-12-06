@@ -83,6 +83,14 @@ pca.explained_variance_ratio_
 ```  
 *From our code block above we reduce the components in our dataset to 3, and then calculate the explained variance ratio that generates this array -- array([0.3719856 , 0.34700813, 0.17603793]) -- this tells us that approx. 89.5% of our variance can be explained by these 3 components.
 
+### Once we have performed our PCA component reductions, we then compare the both the elbow plots and the clusters scatter plot of our original dataframe and our PCA optimized dataframe to note any differences that might exist between them, as evidenced by the elbow plots below -- 
+
+**Original Elbow Plot --  
+![Original](./Resources/elbow_plot.png)  
+
+**PCA optimized Elbow Plot --  
+![PCA](./Resources/pca_elbow_plot.png)
+
 
 
 
