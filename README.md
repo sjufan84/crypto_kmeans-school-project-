@@ -7,7 +7,7 @@ In this project we are utilizing Python 3, Jupyter Lab, Pandas, scikit learn and
 
 Pandas library -- Incredibly useful Python library for data science and data analysis  
 Jupyter Lab -- Robust environment to be able to view and edit devopment projects in a streamlined system.  
-hvPlot -- A high-level plotting API for the PyData ecosystem built on HoloViews.
+hvPlot -- A high-level plotting API for the PyData ecosystem built on HoloViews.  
 scikit learn -- a free software machine learning library for the Python programming language.
 
 ---
@@ -42,11 +42,11 @@ Binary installers for the latest released version are available at the Python Pa
 ---
 ## Dependencies:  
 
-import pandas as pd
-import hvplot.pandas
-from pathlib import Path
-from sklearn.cluster import KMeans
-from sklearn.decomposition import PCA
+import pandas as pd  
+import hvplot.pandas  
+from pathlib import Path  
+from sklearn.cluster import KMeans  
+from sklearn.decomposition import PCA  
 from sklearn.preprocessing import StandardScaler
 
 ## Usage
